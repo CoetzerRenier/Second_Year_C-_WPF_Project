@@ -1,0 +1,47 @@
+﻿<Window x:Class="ST10055559_PROG6212_Part1.ModuleAddingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10055559_PROG6212_Part1"
+        mc:Ignorable="d"
+        Title="Module Editor" Height="535" Width="566">
+    <Grid Background="#FFC1F2FF">
+
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="58,119,0,0" VerticalAlignment="Top" Width="61" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" Height="42" FontSize="16">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Code:" HorizontalAlignment="Left" Margin="58,34,0,0" VerticalAlignment="Top" Width="61" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" Height="39" FontSize="16">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Number of credits:" HorizontalAlignment="Left" Margin="58,204,0,0" VerticalAlignment="Top" Width="166" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" Height="42" FontSize="16">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Class hours per week:" HorizontalAlignment="Left" Margin="58,300,0,0" VerticalAlignment="Top" Width="193" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" Height="42" FontSize="16">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="codeTextBox" HorizontalAlignment="Left" Margin="307,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Segoe Print" BorderBrush="Black" Height="36" FontSize="16"/>
+        <TextBox x:Name="creditsTextBox" HorizontalAlignment="Left" Margin="307,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Segoe Print" BorderBrush="Black" Height="36" FontSize="16"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Margin="307,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Segoe Print" BorderBrush="Black" Height="36" FontSize="16"/>
+        <TextBox x:Name="hoursTextBox" HorizontalAlignment="Left" Margin="307,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Segoe Print" BorderBrush="Black" Height="36" FontSize="16"/>
+        <Button x:Name="backbtn" Content="Back" HorizontalAlignment="Left" Margin="58,411,0,0" VerticalAlignment="Top" Height="45" Width="144" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" MouseDoubleClick="backbtn_MouseDoubleClick" FontSize="16">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="saveModuleInfobtn" Content="Save" HorizontalAlignment="Left" Margin="328,411,0,0" VerticalAlignment="Top" Height="45" Width="144" FontFamily="Segoe Print" Background="#FFEDB67E" FontWeight="Bold" MouseDoubleClick="saveModuleInfobtn_MouseDoubleClick" FontSize="16">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

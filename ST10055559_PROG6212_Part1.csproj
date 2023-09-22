@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="books-candle-old-wallpaper-preview.jpg" />
+    <None Remove="coffee.JPG" />
+    <None Remove="Fire_GIF.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Module_Library">
+      <HintPath>..\Module_Library\bin\Debug\net7.0\Module_Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="books-candle-old-wallpaper-preview.jpg" />
+    <Resource Include="coffee.JPG" />
+    <Resource Include="Fire_GIF.gif" />
+  </ItemGroup>
+
+</Project>

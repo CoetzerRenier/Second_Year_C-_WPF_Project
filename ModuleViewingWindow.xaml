@@ -1,0 +1,69 @@
+﻿<Window x:Class="ST10055559_PROG6212_Part1.ModuleViewingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10055559_PROG6212_Part1"
+        mc:Ignorable="d"
+        Title="Semester Viewer" Height="569" Width="849">
+    <Grid Background="#FF985402" Margin="0,0,0,-16">
+        <DataGrid x:Name="moduleDataGrid" Margin="30,116,373,182" FontFamily="Segoe Print" FontSize="14" AutoGenerateColumns="False" FontWeight="Bold">
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Code" Binding="{Binding Code}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Credits" Binding="{Binding Credits}" />
+                <DataGridTextColumn Header="Hours" Binding="{Binding Hours}" />
+                <DataGridTextColumn Header="Self-study Hours" Binding="{Binding SelfStudyHours}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="backbtn" Content="Back" HorizontalAlignment="Left" Margin="30,445,0,0" VerticalAlignment="Top" Height="38" Width="102" MouseDoubleClick="backbtn_MouseDoubleClick" FontFamily="Segoe Print" FontSize="14" FontWeight="Bold" Background="#FFFFEC93">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="numberOfWeeksTextBox" HorizontalAlignment="Left" Margin="362,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="35" FontSize="14" FontFamily="Segoe Print"/>
+        <Label Content="Enter the number of weeks in a semester:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="308" FontFamily="Segoe Print" FontSize="14" Background="#FFFFEC93" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Enter the start date of the first week:" HorizontalAlignment="Left" Margin="505,116,0,0" VerticalAlignment="Top" Width="287" FontFamily="Segoe Print" FontSize="14" Background="#FFFFEC93" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="saveNumberOfWeeksbtn" Content="Save" HorizontalAlignment="Left" Margin="546,30,0,0" VerticalAlignment="Top" Height="35" Width="102" FontFamily="Segoe Print" FontWeight="Bold" FontSize="14" Background="#FFFFEC93" Click="saveNumberOfWeeksbtn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="saveStartWeekbtn" Content="Save" HorizontalAlignment="Left" Margin="505,352,0,0" VerticalAlignment="Top" Height="35" Width="103" FontFamily="Segoe Print" FontWeight="Bold" FontSize="14" Background="#FFFFEC93" Click="saveStartWeekbtn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Calendar x:Name="calendar" HorizontalAlignment="Left" Margin="505,168,0,0" VerticalAlignment="Top" FirstDayOfWeek="Monday" IsTodayHighlighted="False">
+            <Calendar.Effect>
+                <DropShadowEffect/>
+            </Calendar.Effect>
+        </Calendar>
+        <Button x:Name="calculateSelfStudybtn" Content="Calculate Self-study Hours" HorizontalAlignment="Left" Margin="194,445,0,0" VerticalAlignment="Top" Height="38" Width="210" MouseDoubleClick="calculateSelfStudybtn_MouseDoubleClick" FontFamily="Segoe Print" FontSize="14" FontWeight="Bold" Background="#FFFFEC93">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="logHoursbtn" Content="Log self-study hours" HorizontalAlignment="Left" Margin="619,445,0,0" VerticalAlignment="Top" Height="38" Width="173" FontFamily="Segoe Print" FontSize="14" FontWeight="Bold" Background="#FFFFEC93" MouseDoubleClick="logHoursbtn_MouseDoubleClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="refreshbtn" Content="Refresh" HorizontalAlignment="Left" Margin="466,446,0,0" VerticalAlignment="Top" Height="36" Width="103" FontFamily="Segoe Print" FontWeight="Bold" FontSize="14" Background="#FFBAFF5B" MouseDoubleClick="refreshbtn_MouseDoubleClick">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
